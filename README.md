@@ -5,13 +5,7 @@
 ██╔══██╗██║██╔══██╗██║  ██║    ██║     ██╔══██║██║╚██╗██║██║   ██║██║   ██║██╔══██║██║   ██║██╔══╝  
 ██████╔╝██║██║  ██║██████╔╝    ███████╗██║  ██║██║ ╚████║╚██████╔╝╚██████╔╝██║  ██║╚██████╔╝███████╗
 ╚═════╝ ╚═╝╚═╝  ╚═╝╚═════╝     ╚══════╝╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚══════╝
-                                                                                                      
-███╗   ███╗██╗                                                                                        
-████╗ ████║██║                                                                                        
-██╔████╔██║██║                                                                                        
-██║╚██╔╝██║██║                                                                                        
-██║ ╚═╝ ██║███████╗                                                                                   
-╚═╝     ╚═╝╚══════╝                                                                                   
+                                                                                                                                                                                     
 ```
 
 <div align="center">
@@ -30,13 +24,13 @@
 
 ---
 
-## 🧠 What It Does
+## What It Does
 
 Bird Language ML listens to bird audio recordings and classifies both the **species** and the **communication type** — telling you not just *which* bird is singing, but *why*.
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 Audio File (.wav / .mp3)
@@ -74,7 +68,7 @@ Audio File (.wav / .mp3)
 
 ---
 
-## 📊 Expected Performance
+## Expected Performance
 
 With 150 recordings/species across 20 species:
 
@@ -89,7 +83,7 @@ With 150 recordings/species across 20 species:
 
 ---
 
-## 🚀 Setup
+## Setup
 
 ```bash
 git clone https://github.com/sciencebanda09/bird_language_ml
@@ -99,7 +93,7 @@ pip install -r requirements.txt
 
 ---
 
-## 📥 Step 1 — Download Data
+## Step 1 — Download Data
 
 ```bash
 # Download top 20 India species from xeno-canto (free API)
@@ -115,7 +109,7 @@ Saves:
 
 ---
 
-## 🏋️ Step 2 — Train
+## Step 2 — Train
 
 ```bash
 python -c "from src.train import train; train()"
@@ -140,7 +134,7 @@ Expected training time:
 
 ---
 
-## 📈 Step 3 — Evaluate
+## Step 3 — Evaluate
 
 ```bash
 python -c "from src.evaluate import evaluate; evaluate()"
@@ -154,7 +148,7 @@ Generates in `logs/evaluation/`:
 
 ---
 
-## 🎯 Step 4 — Inference
+## Step 4 — Inference
 
 ### Python API
 
@@ -207,7 +201,7 @@ docker run -p 8000:8000 -v $(pwd)/checkpoints:/app/checkpoints bird-language-ml
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 bird_language_ml/
@@ -231,7 +225,7 @@ bird_language_ml/
 
 ---
 
-## 🏆 Using BirdCLEF Data (Competition Dataset)
+## Using BirdCLEF Data (Competition Dataset)
 
 For production-grade models, use BirdCLEF from Kaggle:
 
